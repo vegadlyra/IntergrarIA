@@ -1,0 +1,241 @@
+integraria-auditor/
+│
+├── .github/
+│   ├── copilot-instructions.md
+│   └── workflows/
+│       ├── ci.yml
+│       └── release.yml
+│
+├── app/
+│   │
+│   ├── (auth)/
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   │
+│   │   ├── register/
+│   │   │   └── page.tsx
+│   │   │
+│   │   └── forgot-password/
+│   │       └── page.tsx
+│   │
+│   ├── dashboard/
+│   │   └── page.tsx
+│   │
+│   ├── auditorias/
+│   │   ├── page.tsx
+│   │   │
+│   │   ├── nova/
+│   │   │   └── page.tsx
+│   │   │
+│   │   └── [id]/
+│   │       ├── page.tsx
+│   │       ├── editar/
+│   │       │   └── page.tsx
+│   │       │
+│   │       ├── gerar/
+│   │       │   └── page.tsx
+│   │       │
+│   │       └── relatorio/
+│   │           └── page.tsx
+│   │
+│   ├── configuracao/
+│   │   └── page.tsx
+│   │
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── app/api/
+│   │
+│   ├── auth/
+│   │   ├── login/
+│   │   ├── register/
+│   │   └── logout/
+│   │
+│   ├── auditorias/
+│   │   ├── criar/
+│   │   ├── atualizar/
+│   │   ├── apagar/
+│   │   ├── listar/
+│   │   └── gerar/
+│   │
+│   ├── relatorios/
+│   │   ├── gerar/
+│   │   ├── pdf/
+│   │   └── export/
+│   │
+│   ├── readiness/
+│   │   └── route.ts
+│   │
+│   └── updater/
+│       └── route.ts
+│
+├── components/
+│   │
+│   ├── layout/
+│   │   ├── Header.tsx
+│   │   ├── Sidebar.tsx
+│   │   ├── Footer.tsx
+│   │   └── ThemeSwitcher.tsx
+│   │
+│   ├── audit/
+│   │   ├── AuditForm.tsx
+│   │   ├── QuestionCard.tsx
+│   │   ├── ProgressBar.tsx
+│   │   ├── WasteCard.tsx
+│   │   ├── SolutionCard.tsx
+│   │   ├── ComboCard.tsx
+│   │   └── RoiCard.tsx
+│   │
+│   ├── dashboard/
+│   │   ├── StatsCard.tsx
+│   │   ├── ActivityList.tsx
+│   │   └── AuditTable.tsx
+│   │
+│   ├── charts/
+│   │   ├── RadarChart.tsx
+│   │   ├── SavingsChart.tsx
+│   │   └── RoiChart.tsx
+│   │
+│   └── shared/
+│       ├── Loading.tsx
+│       ├── Error.tsx
+│       ├── EmptyState.tsx
+│       └── ConfirmDialog.tsx
+│
+├── lib/
+│   │
+│   ├── ai/
+│   │   ├── providers/
+│   │   │   ├── AIProvider.ts
+│   │   │   ├── OpenAIProvider.ts
+│   │   │   └── OllamaProvider.ts
+│   │   │
+│   │   ├── prompts/
+│   │   │   └── audit-prompt.ts
+│   │   │
+│   │   ├── schemas/
+│   │   │   └── report-schema.ts
+│   │   │
+│   │   └── generate-report.ts
+│   │
+│   ├── audit-engine/
+│   │   ├── scoring.ts
+│   │   ├── problem-detector.ts
+│   │   ├── roi-calculator.ts
+│   │   ├── recommendation-engine.ts
+│   │   ├── combo-engine.ts
+│   │   └── implementation-engine.ts
+│   │
+│   ├── database/
+│   │   ├── client.ts
+│   │   ├── repositories/
+│   │   └── migrations/
+│   │
+│   ├── validation/
+│   │   ├── audit.ts
+│   │   ├── report.ts
+│   │   └── user.ts
+│   │
+│   ├── logger/
+│   │   └── logger.ts
+│   │
+│   └── utils/
+│       ├── currency.ts
+│       ├── date.ts
+│       ├── export-json.ts
+│       ├── export-pdf.ts
+│       └── constants.ts
+│
+├── launcher/
+│   │
+│   ├── readiness/
+│   │   ├── system-scan.ts
+│   │   ├── dependency-scan.ts
+│   │   ├── readiness-score.ts
+│   │   └── report-generator.ts
+│   │
+│   ├── installer/
+│   │   ├── install-node.ts
+│   │   ├── install-python.ts
+│   │   ├── install-ollama.ts
+│   │   ├── install-git.ts
+│   │   └── installer.ts
+│   │
+│   ├── updater/
+│   │   ├── check-version.ts
+│   │   ├── backup.ts
+│   │   ├── rollback.ts
+│   │   └── updater.ts
+│   │
+│   └── cli.ts
+│
+├── data/
+│   │
+│   ├── sectors/
+│   │   ├── restaurant.ts
+│   │   ├── clinic.ts
+│   │   ├── pharmacy.ts
+│   │   └── hostel.ts
+│   │
+│   ├── tools/
+│   │   └── tools.json
+│   │
+│   ├── combos/
+│   │   └── combo-templates.json
+│   │
+│   └── scoring/
+│       └── scoring-rules.json
+│
+├── types/
+│   ├── user.ts
+│   ├── audit.ts
+│   ├── answer.ts
+│   ├── report.ts
+│   ├── tool.ts
+│   ├── combo.ts
+│   └── api.ts
+│
+├── prisma/
+│   ├── schema.prisma
+│   └── seed.ts
+│
+├── scripts/
+│   ├── setup.ts
+│   ├── seed.ts
+│   ├── check-env.ts
+│   └── generate-docs.ts
+│
+├── tests/
+│   ├── unit/
+│   │   ├── scoring.test.ts
+│   │   ├── roi.test.ts
+│   │   └── recommendation.test.ts
+│   │
+│   ├── integration/
+│   │   └── report-generation.test.ts
+│   │
+│   └── e2e/
+│       └── audit-flow.spec.ts
+│
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── DATABASE.md
+│   ├── API.md
+│   ├── DEPLOYMENT.md
+│   ├── INSTALL.md
+│   └── CHANGELOG.md
+│
+├── public/
+│   ├── logos/
+│   ├── images/
+│   └── icons/
+│
+├── .env.example
+├── .gitignore
+├── README.md
+├── package.json
+├── next.config.ts
+├── tailwind.config.ts
+├── tsconfig.json
+├── middleware.ts
+└── docker-compose.yml
