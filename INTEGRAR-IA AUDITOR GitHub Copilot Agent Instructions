@@ -1,0 +1,97 @@
+# INTEGRAR-IA AUDITOR
+## GitHub Copilot Agent Instructions
+
+## Product Vision
+
+Este projeto é uma plataforma SaaS de auditorias empresariais apoiadas por IA.
+
+O objetivo é identificar desperdícios operacionais, oportunidades de automação, ROI potencial e gerar planos de implementação para PME.
+
+O produto é composto por:
+
+- Auditor Application
+- Readiness Analyzer
+- Dependency Manager
+- Installer
+- Updater
+
+Todas as decisões técnicas devem privilegiar:
+
+- simplicidade
+- modularidade
+- manutenibilidade
+- escalabilidade
+- clareza
+
+---
+
+# Global Rules
+
+Antes de implementar qualquer funcionalidade:
+
+1. Ler a arquitetura existente.
+2. Procurar reutilizar código.
+3. Evitar criar duplicação.
+4. Evitar criar novas dependências sem necessidade.
+5. Seguir padrões já estabelecidos no projeto.
+6. Preferir composição a herança.
+7. Manter separação clara de responsabilidades.
+
+Sempre que existirem várias abordagens:
+
+Escolher a solução:
+
+- mais simples
+- mais legível
+- mais testável
+- mais fácil de manter
+
+---
+
+# Technology Stack
+
+## Frontend
+
+- Next.js
+- TypeScript
+- TailwindCSS
+- Shadcn/UI
+
+## Backend
+
+- Next.js API Routes
+
+## Database
+
+- Supabase PostgreSQL
+
+## Authentication
+
+- Supabase Auth
+
+## AI Providers
+
+A arquitetura deve suportar:
+
+- OpenAI
+- Ollama
+
+Nunca acoplar o sistema a um único fornecedor.
+
+Toda a integração IA deve passar por uma camada de abstração.
+
+---
+
+# Project Structure
+
+Manter sempre esta estrutura:
+
+```text
+app/
+components/
+lib/
+data/
+types/
+launcher/
+scripts/
+docs/
