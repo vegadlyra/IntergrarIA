@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegrarIA - Diagnóstico de IA e Automação para Negócios</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+        .animate-pulse-soft {
+            animation: pulse-soft 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-brain text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">IntegrarIA</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#modulos" class="hover:text-indigo-600 transition">Setores</a>
+                <a href="#beneficios" class="hover:text-indigo-600 transition">O Relatório</a>
+                <a href="#cta" class="hover:text-indigo-600 transition">Diagnóstico</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/351900000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Diagnóstico%20IntegrarIA." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-4 py-2.5 rounded-xl shadow-md transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Falar no WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32 bg-gradient-to-b from-indigo-50/50 via-white to-slate-50">
+        <div class="absolute inset-0 bg-[radial-gradient(#6366f1_1px,transparent_1px)] [background-size:16px_16px] opacity-15"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="inline-flex items-center space-x-2 bg-indigo-100 text-indigo-700 text-xs sm:text-sm font-semibold px-3.5 py-1.5 rounded-full mb-6">
+                    <i class="fa-solid fa-bolt text-indigo-500"></i>
+                    <span>Diagnóstico de IA & Automação Empresarial</span>
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                    Descubra o Potencial Oculto de Automação no seu <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">Negócio</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed">
+                    Transforme processos manuais em eficiência máxima. O relatório <strong class="text-slate-900">IntegrarIA</strong> combina 18 verticais universais com módulos setoriais personalizados, pontuação global, ROI estimado e roadmap de 90 dias.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#cta" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-indigo-600/25 transition transform hover:-translate-y-0.5 text-base">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <span>Solicitar Diagnóstico Gratuito</span>
+                    </a>
+                    <a href="https://wa.me/351900000000?text=Olá!%20Quero%20agendar%20uma%20auditoria%20com%20o%20IntegrarIA." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-emerald-600/25 transition transform hover:-translate-y-0.5 text-base">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Falar Direto no WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dashboard Preview Graphic -->
+            <div class="mt-16 max-w-5xl mx-auto">
+                <div class="glass-card rounded-2xl p-6 sm:p-8 shadow-2xl shadow-indigo-500/10 border border-slate-200">
+                    <div class="flex items-center justify-between pb-6 border-b border-slate-100 mb-6">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-3 h-3 rounded-full bg-rose-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400 tracking-wider uppercase">Relatório de Diagnóstico Ativo</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="text-slate-500 text-xs font-medium uppercase tracking-wider mb-1">Score Global</div>
+                            <div class="text-3xl font-extrabold text-indigo-600">74 / 100</div>
+                            <div class="text-xs text-emerald-600 mt-2"><i class="fa-solid fa-arrow-trend-up"></i> +18% otimização possível</div>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="text-slate-500 text-xs font-medium uppercase tracking-wider mb-1">ROI Estimado</div>
+                            <div class="text-3xl font-extrabold text-emerald-600">3.4x</div>
+                            <div class="text-xs text-slate-500 mt-2">Retorno em menos de 6 meses</div>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="text-slate-500 text-xs font-medium uppercase tracking-wider mb-1">Roadmap Recomendado</div>
+                            <div class="text-3xl font-extrabold text-slate-900">90 Dias</div>
+                            <div class="text-xs text-indigo-600 mt-2">Fases Starter, Growth & Scale</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modulos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Módulos Setoriais Especializados</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Análise profunda desenhada à medida para as particularidades do seu setor de atividade.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Restaurantes -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Restaurantes, Cafés & Bares</h3>
+                    <p class="text-slate-600 text-sm mb-4">Atendimento WhatsApp, menus digitais, controlo de desperdício e reservas automáticas.</p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Fichas técnicas e SOPs</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Resenhas e avaliações Google</li>
+                    </ul>
+                </div>
+
+                <!-- Barbearias & Cabeleireiros -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Barbearias & Cabeleireiros</h3>
+                    <p class="text-slate-600 text-sm mb-4">Agenda digital, lembretes automáticos por SMS/WhatsApp e gestão de faltas de clientes.</p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Histórico de tratamentos</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Campanhas sazonais</li>
+                    </ul>
+                </div>
+
+                <!-- Ginásios -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Ginásios & Fitness</h3>
+                    <p class="text-slate-600 text-sm mb-4">Captura de leads, visitas experimentais, funis de inscrição e retenção de alunos inativos.</p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> CRM e métricas de retenção</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Acompanhamento automático</li>
+                    </ul>
+                </div>
+
+                <!-- Clínicas -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Clínicas & Saúde</h3>
+                    <p class="text-slate-600 text-sm mb-4">Marcação online, triagem e documentação digital de pacientes e protocolos clínicos.</p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Lembretes de retorno</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Acompanhamento pós-consulta</li>
+                    </ul>
+                </div>
+
+                <!-- Advogados & Contabilistas -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Advogados & Contabilistas</h3>
+                    <p class="text-slate-600 text-sm mb-4">Gestão documental com IA, calendários fiscais automáticos e triagem comercial de clientes.</p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Uso de IA para resumos e drafts</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Alertas de prazos</li>
+                    </ul>
+                </div>
+
+                <!-- Alojamento Local, Oficinas & Imobiliárias -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-house-laptop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Alojamento, Oficinas & Imobiliárias</h3>
+                    <p class="text-slate-600 text-sm mb-4">Automação de check-ins, agendamento de oficinas e qualificação de leads imobiliários.</p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Mensagens pré-estadia</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> CRM e relatórios comerciais</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-20 bg-slate-100/70 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">O que inclui o Relatório Final IntegrarIA?</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Uma ferramenta premium desenvolvida para auditoria, proposta comercial e alavanca de crescimento.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-indigo-600 text-2xl font-extrabold mb-2">01</div>
+                    <h4 class="font-bold text-slate-900 mb-1">Score Global & Setorial</h4>
+                    <p class="text-slate-500 text-sm">Análise detalhada do nível de digitalização face à concorrência do setor.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-indigo-600 text-2xl font-extrabold mb-2">02</div>
+                    <h4 class="font-bold text-slate-900 mb-1">ROI Estimado</h4>
+                    <p class="text-slate-500 text-sm">Cálculo financeiro do retorno gerado pela implementação de inteligência artificial.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-indigo-600 text-2xl font-extrabold mb-2">03</div>
+                    <h4 class="font-bold text-slate-900 mb-1">Roadmap 90 Dias</h4>
+                    <p class="text-slate-500 text-sm">Passo a passo estratégico dividido em cronogramas claros de execução.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-indigo-600 text-2xl font-extrabold mb-2">04</div>
+                    <h4 class="font-bold text-slate-900 mb-1">Propostas Comerciais</h4>
+                    <p class="text-slate-500 text-sm">Estruturação pronta para pacotes Starter, Growth e Scale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECÇÃO DE CAPTURA DE LEADS VIA EMAIL -->
+    <section id="lead-capture" class="py-20 bg-indigo-50/60 border-t border-b border-indigo-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl shadow-indigo-100 border border-slate-200 text-center relative overflow-hidden">
+                <div class="absolute -top-12 -right-12 w-40 h-40 bg-indigo-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="absolute -bottom-12 -left-12 w-40 h-40 bg-violet-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+                <span class="inline-flex items-center space-x-2 bg-indigo-100 text-indigo-700 text-xs sm:text-sm font-semibold px-3.5 py-1.5 rounded-full mb-4">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <span>Newsletter & Relatórios Gratuitos</span>
+                </span>
+                
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                    Receba o Diagnóstico Gratuito por E-mail
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg mb-8 max-w-2xl mx-auto">
+                    Inscreva-se para receber novidades sobre automação, inteligência artificial e um guia passo a passo adaptado ao seu setor.
+                </p>
+
+                <!-- Form de Captura de Email -->
+                <form id="leadForm" class="max-w-xl mx-auto space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input type="text" id="leadName" required placeholder="Seu nome" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-slate-800 placeholder-slate-400 text-sm transition">
+                        <select id="leadSector" required class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-slate-700 text-sm transition bg-white">
+                            <option value="" disabled selected>Selecione o seu setor</option>
+                            <option value="Restaurantes">Restaurantes / Cafés</option>
+                            <option value="Barbearias">Barbearias / Cabeleireiros</option>
+                            <option value="Clínicas">Clínicas / Saúde</option>
+                            <option value="Ginásios">Ginásios / Fitness</option>
+                            <option value="Advogados">Advogados / Jurídico</option>
+                            <option value="Contabilistas">Contabilistas / Gestão</option>
+                            <option value="Alojamento">Alojamento Local / Hotelaria</option>
+                            <option value="Oficinas">Oficinas / Automóvel</option>
+                            <option value="Imobiliárias">Imobiliárias / Mediação</option>
+                            <option value="Outro">Outro Sector</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <input type="email" id="leadEmail" required placeholder="Seu melhor e-mail empresarial" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-slate-800 placeholder-slate-400 text-sm transition">
+                        <button type="submit" class="w-full sm:w-auto shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3.5 rounded-xl shadow-md shadow-indigo-600/20 transition flex items-center justify-center space-x-2 text-sm">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Inscrever</span>
+                        </button>
+                    </div>
+                    <p class="text-xs text-slate-400 text-left sm:text-center mt-2">
+                        <i class="fa-solid fa-shield-halved text-slate-400 mr-1"></i> Respeitamos a sua privacidade. Cancele quando quiser.
+                    </p>
+                </form>
+
+                <!-- Feedback de Sucesso (Modal / Notificação) -->
+                <div id="successMessage" class="hidden mt-6 p-6 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-800 text-center animate-fade-in">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Inscrição Efetuada com Sucesso!</h3>
+                    <p class="text-sm text-emerald-700">Obrigado por se inscrever. Enviámos o guia inicial e as instruções para o seu e-mail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="py-24 bg-gradient-to-br from-indigo-900 via-slate-900 to-indigo-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#818cf8_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block bg-indigo-500/20 text-indigo-300 text-sm font-medium px-4 py-1.5 rounded-full mb-6 border border-indigo-500/30">
+                Pronto para revolucionar a sua operação?
+            </span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6">
+                Solicite o seu Diagnóstico IntegrarIA Agora
+            </h2>
+            <p class="text-slate-300 text-base sm:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+                Fale diretamente com nossa equipa de consultores especializados via WhatsApp ou preencha o formulário para receber a auditoria do seu negócio.
+            </p>
+
+            <!-- WhatsApp Prominent CTA Button -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/351900000000?text=Olá!%20Gostaria%20de%20solicitar%20o%20Diagnóstico%20IntegrarIA%20para%20o%20meu%20negócio." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl shadow-emerald-600/30 transition transform hover:-translate-y-1 animate-pulse-soft">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Conversar no WhatsApp</span>
+                </a>
+            </div>
+
+            <p class="text-xs text-slate-400 mt-6">
+                Sem compromisso • Resposta rápida em horário laboral • Atendimento personalizado
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
+            <div class="flex items-center space-x-3 mb-4 sm:mb-0">
+                <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-brain text-sm"></i>
+                </div>
+                <span class="text-xl font-bold text-white tracking-tight">IntegrarIA</span>
+            </div>
+            <p class="text-sm text-slate-500 text-center sm:text-right">
+                &copy; 2026 IntegrarIA. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Lógica de Envio de Form de Lead -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('leadName').value;
+            const email = document.getElementById('leadEmail').value;
+            const sector = document.getElementById('leadSector').value;
+
+            if(name && email && sector) {
+                // Oculta formulário e mostra mensagem de sucesso
+                document.getElementById('leadForm').classList.add('hidden');
+                document.getElementById('successMessage').classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
